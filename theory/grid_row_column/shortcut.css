@@ -1,0 +1,40 @@
+/* 1. grid-column, grid-row의 start,end를 한번에 적는 방법 "start / end" */
+/* 기존 : 1 2 3 4 
+  거꾸로 셀 때 : -4 -3 -2 -1 */
+
+/* 2. span 개수를 지정해주는 방법 */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+}
+
+.header {
+  background-color: #2ecc71;
+  /* grid-column: 1 / -1; 
+   = grid-column : 1 / 5 */
+  grid-column: span 4;
+
+  /* grid-column-start: 1;
+  grid-column-end: 5; */
+}
+
+.content {
+  background-color: #3498db;
+  grid-column: 1 / -2; /* 1 / 4 */
+  grid-row: span 2;
+  /* grid-row: 2 / 4; */
+}
+
+.nav {
+  background-color: #8e44ad;
+  grid-row: span 2;
+}
+
+.footer {
+  background-color: #f39c12;
+  /* grid-column: 1 / 5; */
+  grid-column: span 4;
+}

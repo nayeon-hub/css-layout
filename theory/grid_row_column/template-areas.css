@@ -1,0 +1,34 @@
+/* template-columns, template-row에 칸마다의 길이설정을 repeat 함수를 사용 */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: 50px repeat(2, 100px) 50px;
+  grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
+}
+
+/* div를 template-areas를 선언하여 배치 - 각 div에게 area name을 설정해줘야함. */
+
+.header {
+  background-color: #2ecc71;
+  grid-area: header;
+}
+
+.content {
+  background-color: #3498db;
+  grid-area: content;
+}
+
+.nav {
+  background-color: #8e44ad;
+  grid-area: nav;
+}
+
+.footer {
+  background-color: #f39c12;
+  grid-area: footer;
+}
