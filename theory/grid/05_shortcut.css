@@ -2,7 +2,8 @@
 /* 기존 : 1 2 3 4 
   거꾸로 셀 때 : -4 -3 -2 -1 */
 
-/* 2. span 개수를 지정해주는 방법 */
+/* 2. span 개수를 지정해주는 방법 
+cell의 개수를 넣어서 위치를 정의함 */
 
 .grid {
   display: grid;
@@ -13,19 +14,17 @@
 
 .header {
   background-color: #2ecc71;
+  /* grid-column-start: 1;
+  grid-column-end: 5; */
   /* grid-column: 1 / -1; 
    = grid-column : 1 / 5 */
   grid-column: span 4;
-
-  /* grid-column-start: 1;
-  grid-column-end: 5; */
 }
 
 .content {
   background-color: #3498db;
   grid-column: 1 / -2; /* 1 / 4 */
-  grid-row: span 2;
-  /* grid-row: 2 / 4; */
+  grid-row: span 2; /* grid-row: 2 / 4; */
 }
 
 .nav {
@@ -35,6 +34,5 @@
 
 .footer {
   background-color: #f39c12;
-  /* grid-column: 1 / 5; */
-  grid-column: span 4;
+  grid-column: span 4; /* grid-column: 1 / 5; */
 }

@@ -1,0 +1,31 @@
+/* "contents" whole grid move*/
+/* 1. justfy-content horizental */
+/* 2. align-content vertical*/
+/* 3. place-content  - shortcut */
+/* 안될 경우 높이 설정을 확인해보기 or 충분한 높이 설정이 되어 있는가? */
+
+.grid {
+  display: grid;
+  height: 100vh;
+  gap: 5px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  color: white;
+  place-content: center space-between;
+}
+
+.header {
+  background-color: #2ecc71;
+}
+
+.content {
+  background-color: #3498db;
+}
+
+.nav {
+  background-color: #8e44ad;
+}
+
+.footer {
+  background-color: #f39c12;
+}

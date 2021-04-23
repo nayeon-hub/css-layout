@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-auto-flow: column;
+  grid-auto-columns: 100px;
+  color: white;
+}
+
+.item:nth-child(odd) {
+  background-color: #2ecc71;
+}
+.item:nth-child(even) {
+  background-color: #3498db;
+}
+
+/* 1. grid-auto-rows */
+
+/* 1-1. grid-template-rows: 100px;
+grid-auto-rows: 100px; */
+/* 1-2. grid-template-rows: repeat(4, 100px);
+grid-auto-rows: 350px; ex) 100px */
+
+/* grid-auto-row를 생성하지 않았을 때 설정한 row의 개수보다 div가 많을 경우,
+css에서 여분의 div를 만들어냄 */
+
+/* 2. grid-auto-flow 마치 flex-directions 처럼  */
+/* 설정된 grid넘어 생성된 div의 방향제시 column or row */
+/* ex) grid-auto-flow : column;으로 설정해 놓는다면,
+grid-auto-column : 200px or 100px .. */

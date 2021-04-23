@@ -14,8 +14,7 @@
 .content {
   background-color: #3498db;
   grid-column: first-line / fourth-line;
-  grid-row: sexy-line 1 / sexy-line 3;
-  /* sexy-line은 모든 row의 이름이 같아서 숫자로 지정해줘야함 */
+  grid-row: sexy-line 1 / sexy-line 3; /* sexy-line은 모든 row의 이름이 같아서 숫자로 지정해줘야함 */
 }
 
 .nav {

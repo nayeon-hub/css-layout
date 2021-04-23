@@ -1,0 +1,21 @@
+.grid {
+  color: white;
+  display: grid;
+  gap: 5px;
+  /* grid-template-columns: repeat(5, minmax(max-content, 1fr)); */
+  /* grid-template-columns: repeat(5, minmax(min-content, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(20px, max-content));
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
+}
+
+.item:nth-child(odd) {
+  background-color: #2ecc71;
+}
+
+.item:nth-child(even) {
+  background-color: #3498db;
+}
+
+/* 1. max-content - content에 크기에 맞게 필요만큼 커지는 것 */
+/* 2. min-content - content의 크기가 작을 수 있을 만큼 작아지는 것 */

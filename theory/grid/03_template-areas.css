@@ -1,4 +1,8 @@
-/* template-columns, template-row에 칸마다의 길이설정을 repeat 함수를 사용 */
+/* 1. grid-template-area
+div를 template-areas를 선언하여 배치 - 각 div에게 area name을 설정해줘야함. */
+
+/* 2. repeat
+template-columns, template-row에 칸마다의 길이설정을 repeat 함수를 사용 */
 
 .grid {
   display: grid;
@@ -10,8 +14,6 @@
     "content content content nav"
     "footer footer footer footer";
 }
-
-/* div를 template-areas를 선언하여 배치 - 각 div에게 area name을 설정해줘야함. */
 
 .header {
   background-color: #2ecc71;

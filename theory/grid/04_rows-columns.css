@@ -1,11 +1,12 @@
+/* column-end,start & row-end,start
+grid-template-areas를 선언하는대신 각 div마다 column의 end,start row의 end,start를 정해줘서 배치시킴 */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
   gap: 10px;
 }
-
-/* grid-template-areas를 선언하는대신 각 div마다 column의 end,start row의 end,start를 정해줘서 배치시킴 */
 
 .header {
   background-color: #2ecc71;

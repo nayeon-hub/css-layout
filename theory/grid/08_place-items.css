@@ -1,0 +1,32 @@
+/* "items" items in grid*/
+/* 1. justify-items default : stretch (horizental) */
+/* 2. align-items default : stretch (vertical)*/
+
+/* only div has a content or have height,width (except atretch)*/
+
+/* 3. place-items : y / x  - shortcut*/
+
+.grid {
+  display: grid;
+  height: 50vh;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  place-items: stretch center;
+}
+
+.header {
+  background-color: #2ecc71;
+}
+
+.content {
+  background-color: #3498db;
+}
+
+.nav {
+  background-color: #8e44ad;
+}
+
+.footer {
+  background-color: #f39c12;
+}

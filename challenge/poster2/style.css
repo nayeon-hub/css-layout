@@ -1,0 +1,70 @@
+body {
+  background-color: #dde1d4;
+  padding: 15px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: "PT Serif", serif;
+}
+
+.container {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template:
+    "one-box one-box two-box two-box " 1fr
+    "one-box one-box two-box two-box " 1fr
+    "three-box three-box four-box five-box " 1fr
+    "three-box three-box six-box seven-box " 1fr / 1fr 1fr 1fr 1fr;
+  color: #fff;
+  font-weight: 700;
+}
+
+.item:first-child {
+  grid-area: one-box;
+  background-color: #dae7de;
+  color: #f44607;
+  font-size: 32px;
+}
+
+.item:nth-child(2) {
+  grid-area: two-box;
+  background-color: #008a69;
+  color: #fff;
+  font-size: 32px;
+}
+
+.item:nth-child(3) {
+  grid-area: three-box;
+  background-color: #f44607;
+  color: #fff;
+  font-size: 32px;
+}
+
+.item:nth-child(4) {
+  grid-area: four-box;
+  background-color: #f7abc5;
+  color: #f44607;
+  font-size: 22px;
+}
+
+.item:nth-child(5) {
+  grid-area: five-box;
+  background-color: #5f5fa9;
+  color: #fff;
+  font-size: 22px;
+}
+
+.item:nth-child(6) {
+  grid-area: six-box;
+  background-color: #ffc128;
+  color: #f44607;
+  font-size: 22px;
+}
+
+.item:last-child {
+  grid-area: seven-box;
+  background-color: #f97374;
+  color: #fff;
+  font-size: 22px;
+}

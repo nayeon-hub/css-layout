@@ -1,0 +1,31 @@
+/* self - choose items */
+
+/* 1. align-self */
+/* 2. justify-self */
+/* 3. place-self */
+
+.grid {
+  display: grid;
+  height: 50vh;
+  gap: 5px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  color: white;
+}
+
+.header {
+  background-color: #2ecc71;
+  place-self: start end;
+}
+
+.content {
+  background-color: #3498db;
+}
+
+.nav {
+  background-color: #8e44ad;
+}
+
+.footer {
+  background-color: #f39c12;
+}

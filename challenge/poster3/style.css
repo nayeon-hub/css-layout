@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  height: 80vh;
+}
+
+.container div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 22px 27px;
+}
+
+.item:first-child {
+  background-color: #9c7ba6;
+}
+
+.item:nth-child(2) {
+  background-image: url("https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+}
+
+.item:nth-child(3) {
+  background-color: #413659;
+}
+.item:nth-child(4) {
+  background-image: url("https://images.unsplash.com/photo-1483691278019-cb7253bee49f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+.item:nth-child(5) {
+  background-color: #f2a88d;
+}
+.item:nth-child(6) {
+  background-color: #f2d0a7;
+}
+.item:nth-child(7) {
+  background-color: #1a4040;
+}
+.item:nth-child(8) {
+  background-color: #2a4c59;
+}
+.item:nth-child(9) {
+  background-image: url("https://images.unsplash.com/photo-1568897451406-94d62ae18aea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80");
+}
+
+.item:nth-child(10) {
+  background-color: #9abbd9;
+}
+.item:nth-child(11) {
+  background-color: #658cbf;
+}
+.item:last-child {
+  background-image: url("https://images.unsplash.com/photo-1542561852-b5ea0a525ca5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+}
+
+h1 {
+  font-size: 37px;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+span {
+  font-size: 10px;
+}
