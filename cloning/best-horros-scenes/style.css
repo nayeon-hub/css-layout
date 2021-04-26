@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+}
+
+button:hover,
+button:active {
+  outline: none;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+}
+
+header {
+  background-color: #f0f0f0;
+}
+
+.header-content {
+  height: 100vh;
+}
+
+header h1 {
+  padding: 64px 0px 30px 34px;
+  font-size: 41px;
+  letter-spacing: 0.1em;
+  color: #e7473c;
+}
+
+.pages-explanation {
+  padding: 34px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.pages-explanation p {
+  margin-bottom: 30px;
+  line-height: 1.3333333;
+  color: #e7473c;
+}
+
+.pages-explanation p:first-child {
+  font-size: 21px;
+}
+
+.pages-explanation p:nth-child(2) {
+  text-align: justify;
+  font-size: 14px;
+}
+
+nav a {
+  display: inline-block;
+  line-height: 1.6;
+  text-decoration: none;
+  border-bottom: 1px solid #6d747c;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  line-height: 1.333333;
+  color: #6d747c;
+  font-size: 14px;
+}
+
+main {
+  font-size: 0px;
+  color: white;
+}
+
+article {
+  padding: 31px;
+  background-color: #da4339;
+}
+
+article:not(:first-child) {
+  background: linear-gradient(#af352c, 18%, #da4339);
+}
+
+.article-header {
+  position: relative;
+}
+
+.article-header a {
+  position: absolute;
+  top: 9px;
+  left: -18px;
+  font-size: 12px;
+  color: black;
+  opacity: 0;
+}
+
+.article-header a:hover {
+  opacity: 1;
+}
+
+.article-header h1 {
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.article-header span {
+  font-size: 14px;
+  line-height: 1.33333333;
+  font-weight: 600;
+}
+
+video {
+  height: 180px;
+  width: 100%;
+  margin: 18px 0px;
+  box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.58);
+}
+
+footer {
+  text-align: right;
+  font-size: 14px;
+}
+
+footer button {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: white;
+  opacity: 0.7;
+}
+
+footer button:hover {
+  opacity: 1;
+}
+
+footer button:first-child {
+  margin: 0px 6px;
+}
+
+@media screen and (min-width: 736px) {
+  body {
+    display: flex;
+  }
+
+  header {
+    width: 35%;
+  }
+
+  header h1 {
+    padding: 64px 0px 30px 44px;
+  }
+
+  .pages-explanation {
+    padding: 44px;
+  }
+
+  .pages-explanation p:first-child {
+    font-size: 18px;
+  }
+
+  .header-content {
+    height: 100vh;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  article {
+    padding: 91px 115px;
+    height: 100vh;
+  }
+
+  .article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .article-header span {
+    font-size: 12px;
+  }
+
+  video {
+    height: 375px;
+    width: 100%;
+    margin: 8px 0px 13px;
+  }
+}
