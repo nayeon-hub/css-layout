@@ -1,0 +1,29 @@
+.poster {
+  display: grid;
+  grid-column: repeat(4, 200px);
+  grid-row: repeat(4, 200px);
+}
+
+header {
+  background-color: salmon;
+}
+
+nav {
+  background-color: sandybrown;
+}
+
+main {
+  background-color: seagreen;
+}
+
+.color-box1 {
+  background-color: sienna;
+}
+
+.color-box2 {
+  background-color: skyblue;
+}
+
+.color-box3 {
+  background-color: slateblue;
+}
