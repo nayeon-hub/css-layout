@@ -14,7 +14,11 @@ body {
   grid-template:
     "header box-two speaker artist" 1fr
     "nav box-three speaker artist" 1fr
-    "nav box-one speaker artist" 1fr / 0.8fr 0.8fr 1fr 1fr;
+    "nav box-one speaker artist" 1fr / minmax(max-content, 0.8fr) minmax(
+      max-content,
+      0.8fr
+    )
+    minmax(max-content, 1fr) minmax(max-content, 1fr);
 }
 
 header {
@@ -68,6 +72,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .content-speaker {
@@ -78,9 +83,8 @@ article {
   grid-area: artist;
 }
 
-.selected {
+article span:hover {
   background-color: #6c01ff;
-  display: inline;
 }
 
 .color-box1 {
