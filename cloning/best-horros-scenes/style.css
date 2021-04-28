@@ -65,6 +65,7 @@ nav a {
 main {
   font-size: 0px;
   color: white;
+  width: 100%;
 }
 
 article {
@@ -139,10 +140,17 @@ footer button:first-child {
 
   header {
     width: 35%;
+    position: fixed;
   }
 
   header h1 {
     padding: 64px 0px 30px 44px;
+  }
+
+  body::before {
+    content: "";
+    display: block;
+    width: 35%;
   }
 
   .header-content {
