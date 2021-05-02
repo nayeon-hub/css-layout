@@ -4,9 +4,10 @@
 }
 
 body {
-  background-color: black;
+  /* padding: 4px 80px; */
+  /* background-color: black; */
+  /* background-color,padding을 쓰는대신 각 요소에게 border를 줄 것 */
   width: 100%;
-  padding: 4px 80px;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
 }
@@ -14,10 +15,12 @@ body {
 form {
   display: grid;
   gap: 4px;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  background-color: black;
+  /* grid-auto-flow: column;
+  grid-auto-columns: 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border: 4px solid black;
 }
-
 .form-item {
   padding: 12px;
   display: flex;
@@ -35,27 +38,43 @@ form select:focus {
   outline: none;
 }
 
+.form-item label {
+  position: relative;
+  top: -1px;
+}
+
 .masterpiece-container {
   display: grid;
   gap: 4px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
   height: 100%;
-  padding-top: 3px;
+  border: 4px solid black;
+  /* padding 대신 border */
+  position: relative;
+  top: -5px;
+  background-color: black;
 }
 
 .item {
   background-color: white;
   padding: 11px 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.item-top {
-  margin: 0 auto;
+.item-top,
+.item-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
-  width: 65%;
-  height: 154px;
+  width: 80%;
+  height: 180px;
   margin-top: 22px;
   margin-bottom: 24px;
   display: block;
