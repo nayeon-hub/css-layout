@@ -1,6 +1,19 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Newsreader", serif;
+}
+
+body {
+  font-family: "Newsreader", serif;
+  color: #0e0e0e;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  display: block;
 }
 
 div img {
@@ -8,10 +21,49 @@ div img {
   height: auto;
 }
 
-.content-shop img {
-  width: 50%;
+div p {
+  font-size: 24px;
 }
 
-.content-inspiration img {
-  width: 33%;
+div a,
+div button {
+  width: 275px;
+  height: 54px;
+  border: 2px solid black;
+  color: black;
+}
+
+div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div a,
+div button,
+.category {
+  font-family: "Noto Sans KR", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+div button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 21px;
+}
+
+.ourstudio button::after {
+  content: "";
+  width: 22%;
+  height: 100%;
+  background-image: url("./assets/arrow-right-solid.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  display: block;
+  border-left: 2px solid black;
 }
