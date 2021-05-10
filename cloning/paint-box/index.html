@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paint Box</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;500;600&family=Noto+Sans+KR:wght@500;700;&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&family=Noto+Sans+KR:wght@500;700;&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -19,157 +19,193 @@
       <button></button>
     </header>
     <main>
-      <div class="collection">
+      <div class="container">
         <img
           src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/PB-05_1280x1280_crop_center.jpg?v=1617830575"
           alt=""
         />
-        <span class="category sr-only">Collection</span>
-        <p>
-          Discover a modern approach to color theory via hyper-curated nail
-          polish + artist-approved manicure essentials.
-        </p>
-        <a href="#">Explore Entire Collection</a>
+        <div class="container-content">
+          <span class="category sr-only">Collection</span>
+          <p>
+            Discover a modern approach to color theory via hyper-curated nail
+            polish + artist-approved manicure essentials.
+          </p>
+          <a href="#">Explore Entire Collection</a>
+        </div>
       </div>
-      <div class="ourstudio">
+      <div class="container">
         <img
           src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/PAINTBOX-UES_0030_93651217-57d7-4f10-8891-86c2dbf637bb_1280x1280_crop_center.jpeg?v=1592966195"
           alt=""
         />
-        <span class="category">Our studio</span>
-        <p>
-          Book new nails at our
-          <em>Upper East Side</em> studio.
-        </p>
-        <button>Book a Manicure</button>
+        <div class="container-content">
+          <span class="category">Our studio</span>
+          <p>
+            Book new nails at our
+            <em>Upper East Side</em> studio.
+          </p>
+          <button type="button" class="add-icon">Book a Manicure</button>
+        </div>
       </div>
-      <div class="shop">
-        <span class="category">The Shop</span>
-        <p>Our Newest Polish Colors</p>
-        <img
-          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/gildedvelvetbottlesfinalwhite_280x350_crop_center.png?v=1605563796"
-          alt=""
-        />
-        <!-- <img
+      <div class="container">
+        <div class="container-content">
+          <span class="category">The Shop</span>
+          <h2>Our Newest Polish Colors</h2>
+        </div>
+        <div class="container-item">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/gildedvelvetbottlesfinalwhite_280x350_crop_center.png?v=1605563796"
+            alt=""
+          />
+          <!-- <img
           src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/gildedvelvetblobs_320x400_crop_center.png?v=1605563796"
           alt=""
         /> -->
-
-        <a href="#"></a>
+          <span class="product-category">Power couple</span>
+          <strong aria-label="New product">New&#33;</strong>
+          <h2>Like Gilded &#43; Like Velvet</h2>
+          <strong aria-label="Price $40.00">&#36; 40.00</strong>
+          <button type="button">Add to cart</button>
+        </div>
+        <div class="toggle-button">
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+        </div>
       </div>
-      <div class="content-giftcards">
+      <div class="container">
         <img
           src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/781C2164-4629-4E32-A11D-6CECD6779989_1_201_a_1280x1280_crop_center.jpg?v=1604946618"
           alt=""
         />
-        <p>
-          Discover a modern approach to color theory via hyper-curated nail
-          polish + artist-approved manicure essentials.
-        </p>
-        <a href="#"></a>
+        <div class="container-content">
+          <span class="category">Gift Cards</span>
+          <p>
+            Give the gift of the Paintbox experience for a manicure that tells a
+            story.
+          </p>
+          <a href="#">Buy a gift card</a>
+        </div>
       </div>
-      <div class="content-inspiration">
+      <div class="container">
+        <div class="container-content">
+          <span class="category">Inspiration</span>
+          <h2>How to use it: Like Gilded + Like Velvet</h2>
+        </div>
+        <div class="container-item">
+          <ol>
+            <li>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/qvtips5_200x255_crop_center.png?v=1604962591"
+                alt=""
+              />
+              <span aria-label="first product">01</span>
+            </li>
+          </ol>
+          <div class="toggle">
+            <i class="fas fa-circle" aria-hidden="true"></i>
+            <i class="fas fa-circle" aria-hidden="true"></i>
+            <i class="fas fa-circle" aria-hidden="true"></i>
+            <i class="fas fa-circle" aria-hidden="true"></i>
+            <i class="fas fa-circle" aria-hidden="true"></i>
+            <i class="fas fa-circle" aria-hidden="true"></i>
+          </div>
+          <a href="#">shop power couple</a>
+        </div>
+      </div>
+      <div class="newsletter">
         <img
-          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/qvtips5_200x255_crop_center.png?v=1604962591"
+          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/17cropfinal_2880x1940_crop_center.jpg?v=1607469889"
           alt=""
         />
+        <span class="date">May 2, 2021</span>
+        <h2>Nails of New York: Hannah Peck</h2>
+        <a href="#">Read story</a>
+      </div>
+      <div class="newsletter">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/04_LikeVelvetLikeGilded_0069_1_2880x1940_crop_center.jpg?v=1604609284"
+          alt=""
+        />
+        <span class="date">Dec 10, 2020</span>
+        <h2>New and Now: The paint box</h2>
+        <a href="#">Read story</a>
+      </div>
+      <div class="newsletter">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/DSC_0021_1_2880x1940_crop_center.jpg?v=1602015314"
+          alt=""
+        />
+        <span class="date">Nov 9, 2020</span>
+        <h2>New and Now: Holiday 2020 Power Couple</h2>
+        <a href="#">Read story</a>
+      </div>
+      <div class="conversation-input">
+        <h2 class="category">join our conversation</h2>
         <p>
-          Discover a modern approach to color theory via hyper-curated nail
-          polish + artist-approved manicure essentials.
+          Be the first to hear about new launches and enjoy 10% off your first
+          polish order.
         </p>
-        <a href="#"></a>
+        <form action="">
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit"></button>
+        </form>
       </div>
-      <div class="content-readstory">
-        <div class="readstory">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/17cropfinal_2880x1940_crop_center.jpg?v=1607469889"
-            alt=""
-          />
-          <p>
-            Discover a modern approach to color theory via hyper-curated nail
-            polish + artist-approved manicure essentials.
-          </p>
-          <a href="#"></a>
-        </div>
-        <div class="readstory">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/04_LikeVelvetLikeGilded_0069_1_2880x1940_crop_center.jpg?v=1604609284"
-            alt=""
-          />
-          <p>
-            Discover a modern approach to color theory via hyper-curated nail
-            polish + artist-approved manicure essentials.
-          </p>
-          <a href="#"></a>
-        </div>
-        <div class="readstory">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/DSC_0021_1_2880x1940_crop_center.jpg?v=1602015314"
-            alt=""
-          />
-          <p>
-            Discover a modern approach to color theory via hyper-curated nail
-            polish + artist-approved manicure essentials.
-          </p>
-          <a href="#"></a>
-        </div>
-      </div>
-      <div class="content-conversation"></div>
-      <div class="content-outside">
+      <div class="container">
         <img
           src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/ezgif.com-optimize_1280x1280_crop_center.gif?v=1605883038"
           alt=""
         />
-        <p>
-          Discover a modern approach to color theory via hyper-curated nail
-          polish + artist-approved manicure essentials.
-        </p>
-        <a href="#"></a>
+        <div class="container-content">
+          <span class="category">&#35;outsidethebox</span>
+          <p>
+            Follow us on Instagram and get inspired by our tutorials to make the
+            most of your Power Couples.
+          </p>
+          <a href="#">Instagram</a>
+        </div>
       </div>
-      <div class="content-photo">
-        <div class="photo-box">
+      <div class="photo-slide">
+        <div class="photo">
           <img
             src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/010_480x480_crop_top.jpg?v=1616772278"
             alt=""
           />
-          <img
+          <!-- <img
             src="https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Screen_Shot_2021-03-26_at_11.32.58_AM_480x480_crop_top.png?v=1616772800"
             alt=""
-          />
+          /> -->
         </div>
         <div class="photo-toggle">
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
+          <i class="fas fa-circle" aria-hidden="true"></i>
         </div>
-
-        <p>
-          Discover a modern approach to color theory via hyper-curated nail
-          polish + artist-approved manicure essentials.
-        </p>
-        <a href="#"></a>
       </div>
     </main>
     <footer>
       <div class="follow">
+        <h2>Follow us</h2>
         <a href="">Instagram</a>
         <a href="">Pinterest</a>
         <a href="">Facebook</a>
         <a href="">Newslatter</a>
       </div>
       <div class="support">
-        <a href="" aria-label="frequentyl asked questions">F.A.Q</a>
+        <h2>Support</h2>
+        <a href="" aria-label="frequently asked questions">F.A.Q</a>
         <a href="">Privacy Policy</a>
         <a href="">Terms and Conditions</a>
         <a href="">Accessibility</a>
       </div>
       <div class="paintbox">
+        <h2>Paintbox</h2>
         <a href="">Our Studio</a>
         <a href="">Careers</a>
         <a href="">Press</a>
