@@ -9,54 +9,77 @@ body {
   color: #0e0e0e;
 }
 
+.container > img {
+  width: 100%;
+  display: block;
+}
+
 .sr-only {
   width: 1px;
   height: 1px;
   overflow: hidden;
   display: block;
+  text-indent: -9999px;
 }
 
-div img {
-  width: 100%;
-  height: auto;
-}
-
-div p {
-  font-size: 24px;
-}
-
-div a,
-div button {
-  width: 275px;
-  height: 54px;
-  border: 2px solid black;
+.category,
+.container-content a,
+.container-content button,
+.product-category,
+.container-item strong,
+.container-item button,
+.container-item a,
+.container-item li span,
+.newsletter a {
+  font-size: 9px;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
   color: black;
 }
 
-div a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container-content h2 {
+  font-size: 24px;
 }
 
-div a,
-div button,
-.category {
-  font-family: "Noto Sans KR", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  font-size: 10px;
-  font-weight: 700;
+.container-item h2 {
+  font-size: 21px;
+  font-style: italic;
 }
 
-div button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 21px;
+.container-content,
+.conversation-input {
+  text-align: center;
 }
 
-.ourstudio button::after {
+.container-content p,
+.newsletter h2,
+.conversation-input p {
+  font-size: 19px;
+  text-align: center;
+  padding: 30px 20px 25px;
+}
+
+.container-content a,
+.container-content button,
+.container-item button,
+.container-item a,
+.newsletter a {
+  width: 244px;
+  height: 44px;
+  display: block;
+  line-height: 41px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.add-icon {
+  padding-left: 20px;
+  text-align: start;
+}
+
+.add-icon::after {
   content: "";
   width: 22%;
   height: 100%;
@@ -65,5 +88,41 @@ div button {
   background-repeat: no-repeat;
   background-size: 14px 14px;
   display: block;
-  border-left: 2px solid black;
+  border-left: 1px solid black;
+  float: right;
+}
+
+.container-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.container-item {
+  text-align: center;
+}
+
+li img {
+  width: 87px;
+}
+
+.newsletter {
+  text-align: center;
+}
+.newsletter span {
+  font-size: 14px;
+}
+
+.newsletter img {
+  display: block;
+  width: 100%;
+}
+
+.newsletter a {
+  border: none;
+}
+
+input {
+  border: none;
+  font-size: 22px;
+  padding: 0 14px;
 }
