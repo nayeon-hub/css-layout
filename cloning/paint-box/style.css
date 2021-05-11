@@ -44,8 +44,9 @@ body {
 }
 
 .container-item h2 {
-  font-size: 21px;
+  font-size: 24px;
   font-style: italic;
+  margin: 9px 0px 22px;
 }
 
 .container-content,
@@ -56,9 +57,8 @@ body {
 .container-content p,
 .newsletter h2,
 .conversation-input p {
-  font-size: 19px;
+  font-size: 24px;
   text-align: center;
-  padding: 30px 20px 25px;
 }
 
 .container-content a,
@@ -66,12 +66,11 @@ body {
 .container-item button,
 .container-item a,
 .newsletter a {
-  width: 244px;
-  height: 44px;
+  width: 280px;
+  height: 50px;
   display: block;
-  line-height: 41px;
+  line-height: 50px;
   border: 1px solid black;
-  margin: 0 auto;
 }
 
 .add-icon {
@@ -92,7 +91,7 @@ body {
   float: right;
 }
 
-.container-item img {
+.container-item > img {
   display: block;
   margin: 0 auto;
 }
@@ -102,7 +101,9 @@ body {
 }
 
 li img {
+  display: block;
   width: 87px;
+  margin: 47px auto 27px;
 }
 
 .newsletter {
@@ -121,8 +122,102 @@ li img {
   border: none;
 }
 
-input {
+.conversation-input input {
   border: none;
   font-size: 22px;
-  padding: 0 14px;
+  padding: 14px 0px;
+}
+
+.conversation-input form {
+  border-bottom: 1px solid black;
+}
+
+.conversation-input button {
+  border: 1px solid black;
+  background-image: url("./assets/arrow-right-solid.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.photo img {
+  width: 50%;
+  float: left;
+}
+
+.footer-item {
+  text-align: center;
+}
+
+.footer-item a {
+  display: block;
+}
+
+.container:first-child .container-content {
+  padding: 0px 28px;
+}
+
+.container:first-child .container-content p {
+  margin-bottom: 74px;
+  margin-top: 47px;
+}
+
+.container:first-child .container-content a {
+  margin: 0 auto 40px;
+}
+
+.container:nth-child(2) .container-content {
+  padding: 0px 23px;
+}
+
+.container:nth-child(2) .container-content span {
+  margin: 32px 0 22px;
+  display: inline-block;
+}
+
+.container:nth-child(2) .container-content button {
+  margin: 56px auto 26px;
+}
+
+.container:nth-child(3) .container-content span {
+  display: inline-block;
+  margin: 37px 0 27px;
+}
+
+.container:nth-child(3) .container-item img {
+  margin: 36px auto;
+}
+
+.product-strong::before {
+  content: "|";
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.container:nth-child(3) .container-item button {
+  margin: 30px auto 66px;
+}
+
+.container:nth-child(4) .container-content {
+  padding: 0 31px;
+}
+
+.container:nth-child(4) .container-content span {
+  display: inline-block;
+  margin: 31px 0 22px;
+}
+
+.container:nth-child(4) .container-content a {
+  margin: 52px auto 26px;
+}
+
+.container:nth-child(5) .container-content {
+  padding: 0 32px;
+}
+
+.container:nth-child(5) .container-content span {
+  margin: 66px auto 30px;
+  display: inline-block;
 }
