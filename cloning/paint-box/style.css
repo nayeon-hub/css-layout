@@ -9,6 +9,11 @@ body {
   color: #0e0e0e;
 }
 
+.container {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
 .container > img {
   width: 100%;
   display: block;
@@ -31,11 +36,11 @@ body {
 .container-item a,
 .container-item li span,
 .newsletter a {
-  font-size: 9px;
+  font-size: 7px;
   font-family: "Noto Sans KR", sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: black;
 }
 
@@ -57,8 +62,9 @@ body {
 .container-content p,
 .newsletter h2,
 .conversation-input p {
-  font-size: 24px;
+  font-size: 21px;
   text-align: center;
+  line-height: 1.2;
 }
 
 .container-content a,
@@ -155,35 +161,40 @@ li img {
   display: block;
 }
 
+.container-content {
+  padding: 35px 28px;
+}
+
 .container:first-child .container-content {
-  padding: 0px 28px;
+  background-color: #fbf7f6;
 }
 
 .container:first-child .container-content p {
-  margin-bottom: 74px;
-  margin-top: 47px;
+  margin-top: 11px;
+  margin-bottom: 52px;
 }
 
 .container:first-child .container-content a {
-  margin: 0 auto 40px;
+  margin: 0 auto;
 }
 
 .container:nth-child(2) .container-content {
-  padding: 0px 23px;
+  background-color: #f3ede8;
 }
 
 .container:nth-child(2) .container-content span {
-  margin: 32px 0 22px;
+  margin-bottom: 22px;
   display: inline-block;
 }
 
 .container:nth-child(2) .container-content button {
-  margin: 56px auto 26px;
+  margin: 56px auto 42px;
+  display: inline-block;
 }
 
 .container:nth-child(3) .container-content span {
   display: inline-block;
-  margin: 37px 0 27px;
+  margin-bottom: 27px;
 }
 
 .container:nth-child(3) .container-item img {
@@ -201,7 +212,7 @@ li img {
 }
 
 .container:nth-child(4) .container-content {
-  padding: 0 31px;
+  background-color: #dee8e9;
 }
 
 .container:nth-child(4) .container-content span {
@@ -211,10 +222,7 @@ li img {
 
 .container:nth-child(4) .container-content a {
   margin: 52px auto 26px;
-}
-
-.container:nth-child(5) .container-content {
-  padding: 0 32px;
+  display: inline-block;
 }
 
 .container:nth-child(5) .container-content span {
